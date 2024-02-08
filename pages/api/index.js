@@ -11,12 +11,10 @@ OQIDAQAB
 const dataCriacao = new Date('2024-02-07').getTime();
 
 export default function handler(req, res) {
-  console.log('A função handler está sendo invocada.'); 
+  res.status(200)
   res.setHeader('Content-Type', 'application/json');
-  res.status(200).json({
-    public_key: publicKey.replace(/\n\s+/g, '\n'),
+  res.json({
+    public_key: publicKey,
     created_at: dataCriacao
   });
 }
-
-oooooooooooo
