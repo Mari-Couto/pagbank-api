@@ -11,8 +11,8 @@ OQIDAQAB
 const dataCriacao = new Date('2024-02-07').getTime();
 
 export default function handler(req, res) {
-  res.status(200)
-  res.setHeader('Content-Type', 'application/json');
+  res.setHeader('Content-Type', 'application/json'); 
+  res.status(200); 
   res.json({
     public_key: publicKey,
     created_at: dataCriacao
